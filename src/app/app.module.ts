@@ -6,6 +6,8 @@ import { InfoTitleComponent } from './components/info-chunk/info-title/info-titl
 import { InfoTextComponent } from './components/info-chunk/info-text/info-text.component';
 import { InfoChunkComponent } from './components/info-chunk/info-chunk.component';
 import { PreviewComponent } from './components/preview/preview.component';
+import { InfoComponent } from './components/info/info.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { PreviewComponent } from './components/preview/preview.component';
     InfoTitleComponent,
     InfoTextComponent,
     InfoChunkComponent,
-    PreviewComponent
+    PreviewComponent,
+    InfoComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule

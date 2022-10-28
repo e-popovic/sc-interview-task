@@ -1,0 +1,8 @@
+.page-box {
+  display: flex;
+  width: 100%;
+}
+.pic-info-box {
+  width: calc(100% - 410px);
+}
+
