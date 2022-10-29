@@ -1,0 +1,8 @@
+<div>
+  <app-info-title [myTitle]="myTitle"></app-info-title>
+
+  <mat-chip-list >
+    <mat-chip *ngFor="let keyword of myKeywords" class="my-mat-chip">{{keyword}}</mat-chip>
+  </mat-chip-list>
+
+</div>

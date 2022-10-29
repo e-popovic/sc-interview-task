@@ -1,3 +1,7 @@
-<div>
-  pozz iz infoa, svijete :D
+<div class="full-info-container">
+  <app-three-infos-chunk [myThreeTexts]="text.slice(0,3)"></app-three-infos-chunk>
+
+  <app-info-chunk myTitle="Opis" [myText]="text[3]"></app-info-chunk>
+
+  <app-keywords-chunk myTitle="Ključne riječi" [myKeywords]="keywords"></app-keywords-chunk>
 </div>

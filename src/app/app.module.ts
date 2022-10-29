@@ -8,6 +8,9 @@ import { InfoChunkComponent } from './components/info-chunk/info-chunk.component
 import { PreviewComponent } from './components/preview/preview.component';
 import { InfoComponent } from './components/info/info.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { KeywordsChunkComponent } from './components/info/keywords-chunk/keywords-chunk.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { ThreeInfosChunkComponent } from './components/info/three-infos-chunk/three-infos-chunk.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     InfoChunkComponent,
     PreviewComponent,
     InfoComponent,
-    SidebarComponent
+    SidebarComponent,
+    KeywordsChunkComponent,
+    ThreeInfosChunkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
