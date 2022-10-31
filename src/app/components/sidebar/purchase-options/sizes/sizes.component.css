@@ -1,0 +1,51 @@
+:host {
+  margin-bottom: 38px;
+  display: inline-block;
+}
+:host, .sizes-container { width: 100%; }
+
+.how-to-use {
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+}
+.how-to-use i {
+  font-size: 15px;
+  vertical-align: bottom;
+}
+
+.sizes-container {
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  margin: 16px auto;
+}
+.image-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 16px 20px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+::ng-deep .mat-radio-label {
+  align-items: inherit!important;
+}
+
+.size-name, mat-checkbox {
+  font-size: 14px;
+  line-height: 19px;
+}
+.size-dim {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7C7C;
+}
+
+.size-button {
+  margin: 15px 20px 14px;
+  display: flex;
+  justify-content: space-between
+}
+

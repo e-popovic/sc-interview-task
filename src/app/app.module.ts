@@ -14,6 +14,14 @@ import { ThreeInfosChunkComponent } from './components/info/three-infos-chunk/th
 import { MatDividerModule } from '@angular/material/divider';
 import { NotesComponent } from './components/sidebar/notes/notes.component';
 import {CommonModule} from '@angular/common';
+import { PurchaseOptionsComponent } from './components/sidebar/purchase-options/purchase-options.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { ButtonGroupComponent } from './components/sidebar/purchase-options/button-group/button-group.component';
+import { SizesComponent } from './components/sidebar/purchase-options/sizes/sizes.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -27,12 +35,20 @@ import {CommonModule} from '@angular/common';
     KeywordsChunkComponent,
     ThreeInfosChunkComponent,
     NotesComponent,
+    PurchaseOptionsComponent,
+    ButtonGroupComponent,
+    SizesComponent,
   ],
   imports: [
     BrowserModule,
     MatChipsModule,
     MatDividerModule,
     CommonModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

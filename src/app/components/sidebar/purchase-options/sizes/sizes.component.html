@@ -1,0 +1,34 @@
+<div class="how-to-use">
+  Kako mogu koristiti ovaj sadržaj?
+  <i class="material-icons">info_outline</i>
+</div>
+
+<div class="sizes-container">
+  <div class="image-title uppercase">Image 001</div>
+
+  <mat-radio-group>
+    <div *ngFor="let size of sizes">
+
+      <mat-divider></mat-divider>
+
+      <div class="size-button" style="">
+        <mat-radio-button [value]="size[0]">
+          <div>
+            <div class="size-name uppercase">
+              <div>{{size[0]}}</div>
+            </div>
+            <div class="size-dim">{{size[1]}}</div>
+
+          </div>
+        </mat-radio-button>
+
+        <div class="size-name uppercase">{{size[2]}}kn</div>
+      </div>
+
+    </div>
+  </mat-radio-group>
+</div>
+
+<section>
+  <mat-checkbox>Preuzmi s potpisom autora</mat-checkbox>
+</section>

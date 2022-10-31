@@ -1,0 +1,31 @@
+button {
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.primary-style { background: #E8E8E8; }
+.secondary-style { border: 1px solid #000000; }
+.accent-style {
+  background: #212121;
+  color: #FFFFFF;
+}
+
+.upper {
+  text-transform: uppercase;
+  height: 45px;
+  font-weight: 600;
+}
+.lower {
+  height: 40px;
+  font-weight: 400;
+}
+.small-buttons, .button-container {
+  display: flex;
+}
+.button-container { flex-direction: column; }
+.small-buttons {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.small-buttons div { width: 49%; }
+.small-buttons button { width: 100%; }
