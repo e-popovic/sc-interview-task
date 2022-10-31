@@ -1,8 +1,10 @@
 .three-info-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 app-info-chunk {
   width: 33%;
+  min-width: 60px;
 }

@@ -11,6 +11,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { KeywordsChunkComponent } from './components/info/keywords-chunk/keywords-chunk.component';
 import { MatChipsModule } from '@angular/material/chips';
 import { ThreeInfosChunkComponent } from './components/info/three-infos-chunk/three-infos-chunk.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { NotesComponent } from './components/sidebar/notes/notes.component';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { ThreeInfosChunkComponent } from './components/info/three-infos-chunk/th
     InfoComponent,
     SidebarComponent,
     KeywordsChunkComponent,
-    ThreeInfosChunkComponent
+    ThreeInfosChunkComponent,
+    NotesComponent,
   ],
   imports: [
     BrowserModule,
     MatChipsModule,
+    MatDividerModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
