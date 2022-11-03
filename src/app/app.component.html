@@ -1,7 +1,9 @@
-<div class="page-box">
-  <div class="pic-info-box">
+<div class="page-box" [ngClass]="sizeBig ? '' : 'small-page-box'">
+
+  <div [ngClass]="sizeBig ? 'big-pic-info-box' : 'small-pic-info-box'">
     <app-preview></app-preview>
-    <app-info></app-info>
+    <app-info [ngClass]="sizeBig ? 'big-app-info' : ''"></app-info>
   </div>
-  <app-sidebar></app-sidebar>
+
+  <app-sidebar [ngClass]="sizeBig ? '' : 'small-sidebar'"></app-sidebar>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'smartcode-app';
+  public sizeBig = true;
+
+  ngOnInit() {
+    this.sizeBig = window.innerWidth >= 720;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.sizeBig = window.innerWidth >= 720;
+  }
 }

@@ -2,6 +2,20 @@
   display: flex;
   width: 100%;
 }
-.pic-info-box {
+.small-page-box { flex-direction: column; }
+
+.big-pic-info-box {
   width: calc(100% - 410px);
+}
+.small-pic-info-box {
+  width: 100%;
+  height: auto;
+}
+
+.big-app-info {
+  height: 301px;
+}
+
+.small-sidebar {
+  margin: auto;
 }
